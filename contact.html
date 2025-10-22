@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us</title>
+  <script src="form.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Empowering the Nation</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="six_month.html">Courses</a></li>
+        <li><a href="calculator.html">Calculate Fees</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Get in Touch</h2>
+      <form id="contactForm">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="venue">Select Venue:</label><br>
+        <select id="venue" name="venue" required>
+          <option value="">--Choose a venue--</option>
+          <option value="soweto">Soweto</option>
+          <option value="sandton">Sandton</option>
+          <option value="midrand">Midrand</option>
+        </select><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formStatus"></p>
+    </section>
+
+    <section>
+      <h2>Our Locations</h2>
+      <ul>
+        <li>Soweto Training Centre – 123 Freedom St</li>
+        <li>Sandton Skills Hub – 45 Prosperity Ave</li>
+        <li>Midrand Empowerment Zone – 78 Growth Rd</li>
+      </ul>
+      <p>Phone: +27 11 555 1234<br>Email: info@empoweringnation.co.za</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Empowering the Nation</p>
+  </footer>
+</body>
+</html>
