@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fee Calculator</title>
+  <script src="calculator.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Course Fee Calculator</h1>
+  </header>
+  <main>
+    <form>
+      <label>Phone Number: <input type="tel" name="phone"></label><br>
+      <label>Email: <input type="email" name="email"></label><br><br>
+
+      <h3>Select Courses:</h3>
+      <label><input type="checkbox" name="course" value="1500"> First Aid (R1500)</label><br>
+      <label><input type="checkbox" name="course" value="1500"> Sewing (R1500)</label><br>
+      <label><input type="checkbox" name="course" value="1500"> Landscaping (R1500)</label><br>
+      <label><input type="checkbox" name="course" value="1500"> Life Skills (R1500)</label><br>
+      <label><input type="checkbox" name="course" value="750"> Child Care (R750)</label><br>
+      <label><input type="checkbox" name="course" value="750"> Cooking (R750)</label><br>
+      <label><input type="checkbox" name="course" value="750"> Garden Maintenance (R750)</label><br><br>
+
+      <button type="button" onclick="calculateFees()">Calculate Total</button>
+    </form>
+    <pre id="result"></pre>
+  </main>
+</body>
+</html>
